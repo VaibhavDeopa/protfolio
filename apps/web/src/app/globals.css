@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: Georgia, "Times New Roman", Times, serif;
+  --color-ink: #1a1a1a;
+  --color-muted: #555;
+  --color-border: #ddd;
+  --color-link: #0645ad;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-ink antialiased;
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.prose h2 {
+  @apply mt-8 mb-3 text-xl font-normal;
+}
+
+.prose h3 {
+  @apply mt-6 mb-2 text-lg font-normal;
+}
+
+.prose p {
+  @apply mb-4;
+}
+
+.prose ul {
+  @apply mb-4 list-disc pl-6;
+}

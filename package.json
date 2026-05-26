@@ -1,0 +1,16 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo run dev --filter=@portfolio/web --filter=@portfolio/projects --filter=@portfolio/blog",
+    "lint": "turbo lint"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.4"
+  },
+  "packageManager": "pnpm@9.15.9",
+  "engines": {
+    "node": ">=18"
+  }
+}
